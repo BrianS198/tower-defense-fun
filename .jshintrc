@@ -2,11 +2,11 @@
     // Enforcing
     "bitwise": false,
     "camelcase": true,
+    "curly": true,
     "eqeqeq": false,
-    "immed": true,
     "latedef": true,
-    "quotmark": 'single',
-    "unused": 'strict',
+    "quotmark": "single",
+    "unused": "strict",
     "maxlen": 120,
 
     // Relaxing
