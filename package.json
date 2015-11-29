@@ -4,7 +4,14 @@
   "description": "A simple tower defense game written in Phaser JS.",
   "main": "index.html",
   "scripts": {
-    "test": "jasmine"
+    "build": "npm run build:js",
+    "build:js": "browserify src/game.js -o dist/game.js",
+    "lint": "jshint src",
+    "preinstall": "npm run setup-dist-folder",
+    "setup-dist-folder": "mkdir -p dist",
+    "start": "http-server",
+    "test": "jasmine",
+    "watch": "watch 'npm run build' src"
   },
   "author": "Brian Simpson",
   "license": "ISC",
@@ -12,7 +19,10 @@
     "phaser": "^2.4.4"
   },
   "devDependencies": {
+    "browserify": "^12.0.1",
+    "http-server": "^0.8.5",
     "jasmine": "^2.3.2",
-    "jshint": "^2.8.0"
+    "jshint": "^2.8.0",
+    "watch": "^0.16.0"
   }
 }
