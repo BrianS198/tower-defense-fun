@@ -1,0 +1,9 @@
+{
+  "name": "tower-defense",
+  "version": "0.0.1",
+  "description": "A simple tower defense game written in Phaser JS.",
+  "main": "index.html",
+  "scripts": {},
+  "author": "Brian Simpson",
+  "license": "ISC"
+}
