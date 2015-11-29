@@ -1,0 +1,22 @@
+{
+    // Enforcing
+    "bitwise": false,
+    "camelcase": true,
+    "eqeqeq": false,
+    "immed": true,
+    "latedef": true,
+    "quotmark": 'single',
+    "unused": 'strict',
+    "maxlen": 120,
+
+    // Relaxing
+    "eqnull": true,
+    "multistr": true,
+
+    // Environments
+    "browser": true,
+    "jasmine": true,
+
+    // Custom Globals
+    "globals": {}
+}

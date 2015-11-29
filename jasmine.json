@@ -1,0 +1,6 @@
+{
+  "spec_dir": "src/js",
+  "spec_files": [
+    "**/*\-unit.js",
+  ],
+}

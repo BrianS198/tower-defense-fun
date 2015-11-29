@@ -3,13 +3,16 @@
   "version": "0.0.1",
   "description": "A simple tower defense game written in Phaser JS.",
   "main": "index.html",
-  "scripts": {},
+  "scripts": {
+    "test": "jasmine"
+  },
   "author": "Brian Simpson",
   "license": "ISC",
   "dependencies": {
     "phaser": "^2.4.4"
   },
   "devDependencies": {
+    "jasmine": "^2.3.2",
     "jshint": "^2.8.0"
   }
 }
