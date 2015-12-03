@@ -4,14 +4,15 @@
   "description": "A simple tower defense game written in Phaser JS.",
   "main": "index.html",
   "scripts": {
-    "build": "npm run build:js",
-    "build:js": "browserify src/game.js -o dist/game.js",
-    "lint": "jshint src",
-    "preinstall": "npm run setup-dist-folder",
-    "setup-dist-folder": "mkdir -p dist",
-    "start": "http-server",
-    "test": "jasmine",
-    "watch": "watch 'npm run build' src"
+    "build": "npm run build:js && npm run build:game",
+    "build:js": "./node_Modules/.bin/browserify src/js/init.js -o dist/game.js",
+    "build:game": "cp node_modules/phaser/dist/phaser.min.js dist/phaser.min.js && cp index.html dist/index.html",
+    "lint": "./node_modules/.bin/eslint src",
+    "prebuild": "npm run lint",
+    "preinstall": "mkdir -p dist",
+    "start": "./node_modules/.bin/http-server dist/",
+    "test": "./node_modules/.bin/jasmine",
+    "watch": "./node_modules/.bin/watch 'npm run build' . -d"
   },
   "author": "Brian Simpson",
   "license": "ISC",
@@ -20,9 +21,10 @@
   },
   "devDependencies": {
     "browserify": "^12.0.1",
+    "eslint": "^1.10.2",
+    "eslint-config-google": "^0.3.0",
     "http-server": "^0.8.5",
     "jasmine": "^2.3.2",
-    "jshint": "^2.8.0",
     "watch": "^0.16.0"
   }
 }

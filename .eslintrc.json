@@ -1,0 +1,7 @@
+{
+  "extends": "google",
+  "rules": {},
+  "globals": {
+    "Phaser": true
+  }
+}
