@@ -12,7 +12,7 @@
     "preinstall": "mkdir -p dist",
     "start": "./node_modules/.bin/http-server dist/",
     "test": "./node_modules/.bin/jasmine",
-    "watch": "./node_modules/.bin/watch 'npm run build' . -d"
+    "watch": ".node_modules/.bin/watch 'npm run build' src/ -d"
   },
   "author": "Brian Simpson",
   "license": "ISC",
