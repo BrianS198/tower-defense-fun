@@ -9,7 +9,6 @@
     "build:game": "cp node_modules/phaser/dist/phaser.min.js dist/phaser.min.js && cp index.html dist/index.html",
     "build:assets": "cp -R src/assets/ dist/assets/",
     "lint": "./node_modules/.bin/eslint src -f table ; true",
-    "prebuild": "npm run lint",
     "preinstall": "mkdir -p dist",
     "start": "./node_modules/.bin/http-server dist/",
     "test": "./node_modules/.bin/jasmine",
