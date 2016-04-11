@@ -1,9 +1,11 @@
 # Constants
 
 * **Default Key Bindings** - A map of keys that correspond to values of the
-  ```coffeescript
+
+  ```javascript
     Phaser.Keyboard
   ```
+
   object to a particular `UserAction`.
 * **Gameplay Constants** - Constants relevant to static gameplay mechanics,
   ie. default difficulty or gravity.
