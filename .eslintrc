@@ -3,5 +3,6 @@
   "rules": {},
   "globals": {
     "Phaser": true
+    "window": true
   }
 }
