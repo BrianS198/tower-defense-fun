@@ -1,5 +1,5 @@
 var State = {
-  Boot: require('./states/boot.js')
+  boot: require('./states/boot.js')
 };
 
 /**
@@ -8,8 +8,10 @@ var State = {
 (function() {
   'use strict';
 
-  var game = new Phaser.Game(640, 480, Phaser.CANVAS, 'game');
+  var game;
 
-  game.state.add('Boot', State.Boot);
+  game = new Phaser.Game(800, 800, Phaser.AUTO, 'game');
+
+  game.state.add('Boot', State.boot);
   game.state.start('Boot');
 })();
