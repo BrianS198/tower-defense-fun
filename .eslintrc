@@ -2,7 +2,7 @@
   "extends": "google",
   "rules": {},
   "globals": {
-    "Phaser": true
+    "Phaser": true,
     "window": true
   }
 }
