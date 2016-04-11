@@ -2,9 +2,6 @@ var State = {
   boot: require('./states/boot.js')
 };
 
-/**
- * Initialization file...where the magic happens.
- */
 (function() {
   'use strict';
 

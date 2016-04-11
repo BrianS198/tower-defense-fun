@@ -1,6 +1,3 @@
-/**
- * State - Boot
- */
 var BootState = function() {};
 var DefaultKeyBindings = require('./../constants/default_key_bindings.js');
 var GameplayConstants = require('./../constants/gameplay_constants.js');
