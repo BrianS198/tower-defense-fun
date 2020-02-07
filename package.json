@@ -1,0 +1,32 @@
+{
+  "name": "tower-defense",
+  "version": "0.0.1",
+  "description": "A simple tower defense game written in Phaser JS.",
+  "main": "index.html",
+  "scripts": {
+    "build": "npm run build:js && npm run build:game && npm run build:assets",
+    "build:assets": "cp -R src/assets/ dist/assets/ && npm run build:phaser",
+    "build:game": "cp ./index.html ./dist/index.html",
+    "build:js": "./node_modules/.bin/browserify ./src/js/init.js -o ./dist/game.js ; true",
+    "build:phaser": "cp ./node_modules/phaser/dist/phaser.min.js ./dist/phaser.min.js",
+    "lint": "./node_modules/.bin/eslint src -f table ; true",
+    "preinstall": "mkdir -p dist",
+    "start": "./node_modules/.bin/http-server dist/",
+    "test": "./node_modules/.bin/jasmine",
+    "watch": "./node_modules/.bin/watch 'npm run build:js' './src'"
+  },
+  "author": "Emma Bukacek",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.9.0",
+    "phaser": "^2.4.6"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "eslint": "^2.7.0",
+    "eslint-config-google": "^0.4.0",
+    "http-server": "^0.9.0",
+    "jasmine": "^2.4.1",
+    "watch": "^0.17.1"
+  }
+}

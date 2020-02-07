@@ -1,0 +1,13 @@
+{
+  "extends": "google",
+  "rules": {
+    "no-shadow": 2,
+    "vars-on-top": 1
+  },
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "Phaser": true,
+  }
+}
